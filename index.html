@@ -1,23 +1,102 @@
 <html>
   <head>
-    <style>
+    <title>Guild Wars 2 Raid Academy</title>
+    <link rel="stylesheet" href="https://use.typekit.net/oua7kfe.css">
+    <style type="text/css">
       body {
         background-color: #1f1f1f;
         color: #fafafa;
+        font-family: "nudista-web", sans-serif;
+        font-size: 18px;
+        line-height: 1.4em;
         text-align: center;
+        margin: 0;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 20px;
+      }
+
+      .header {
+        background-image: url('https://wiki.guildwars2.com/images/d/dc/Fireheart_Rise_loading_screen.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        padding-top: 1em;
+      }
+
+      .header > * {
+        position: relative;
+        margin-bottom: 2em;
+        z-index: 1;
+      }
+
+      .header::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0, .8);
+        z-index: 0;
+      }
+
+
+      h1 {
+        line-height: 1.2em;
+        margin-bottom: 0.8em;
+      }
+
+      .text-content {
+        margin-bottom: 2em;
+        margin-right: 2em;
+      }
+
+      .layout {
+        display: flex;
+        justify-content: center;
+      }
+
+      iframe {
+        max-width: 100%;
       }
 
       .logo {
         width: 300px;
       }
+
+      @media (max-width: 700px) {
+        .layout {
+          display: block;
+        }
+
+        .text-content {
+          margin-right: 0;
+        }
+      }
     </style>
   </head>
   <body>
-    <img src='https://snowcrows.com/assets/gw2aca.jpg' class='logo' />
-    <h1>Guild Wars 2 Raid Academy</h1>
-    <p>
-      We are the largest and friendliest NA community with 3,000+ people that offers raid learning and clear runs. Our system is devoted to the core values of Growth, Unity and Respect. Our main objective is to offer a non-judgmental environment for new and more experienced players to grow, share, and acquire the needed knowledge to perform well. We use a syllabus system to encourage learning and growth at a steady pace.
-    </p>
-    <iframe src="https://discordapp.com/widget?id=322563004346662912&amp;theme=dark" width="400" height="500" allowtransparency="true" frameborder="0"></iframe>
+    <div class="content">
+      <div class="header">
+        <div class="container">
+          <h1>Guild Wars 2 Raid Academy</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class='layout'>
+          <div class='text-content'>
+            <img src="https://snowcrows.com/assets/gw2aca.jpg" class="logo" />
+            <p>
+              We are the largest and friendliest NA community with 3,000+ people that offers raid learning and clear runs. Our system is devoted to the core values of Growth, Unity and Respect. Our main objective is to offer a non-judgmental environment for new and more experienced players to grow, share, and acquire the needed knowledge to perform well. We use a syllabus system to encourage learning and growth at a steady pace.
+            </p>
+          </div>
+          <iframe src="https://discordapp.com/widget?id=322563004346662912&amp;theme=dark" width="400" height="500" allowtransparency="true" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
